@@ -2,7 +2,7 @@
 
 const Footer = () => {
     return (
-        <div>
+        <div className="h-[300px] my-2 border">
             <h1>Footer</h1>
             
         </div>
