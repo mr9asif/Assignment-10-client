@@ -55,3 +55,68 @@ body {
   background-image: url('https://i.postimg.cc/XvGVG0Dm/420219.jpg');
   background-size: cover;
 }
+
+
+/* offerr */
+.offer{
+  background-image: url('https://i.postimg.cc/BvST3Zks/a-holiday-couple-in-white-summer-clothing-walks-down-a-paradise-beach.webp');
+  background-size: cover;
+
+}
+
+/* Guide */
+/* .autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+} */
+
+/* .ss1{
+  background-image:url('https://i.postimg.cc/BQvK8YJ0/Sundarban-Tiger-Roar-1.jpg') ;
+  background-size: cover;
+  
+}
+.ss2{
+  background-image:url('https://i.postimg.cc/BQvK8YJ0/Sundarban-Tiger-Roar-1.jpg') ;
+  background-size: cover;
+  
+}
+.ss3{
+  background-image:url('https://i.postimg.cc/BQvK8YJ0/Sundarban-Tiger-Roar-1.jpg') ;
+  background-size: cover;
+  
+}
+.ss4{
+  background-image:url('https://i.postimg.cc/BQvK8YJ0/Sundarban-Tiger-Roar-1.jpg') ;
+  background-size: cover;
+  
+}
+.ss5{
+  background-image:url('https://i.postimg.cc/BQvK8YJ0/Sundarban-Tiger-Roar-1.jpg') ;
+  background-size: cover;
+  
+} */

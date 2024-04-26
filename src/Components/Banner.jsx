@@ -10,7 +10,7 @@ import '../App.css';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
-import { Link } from 'react-router-dom';
+
 const Banner = () => {
     return (
         <div className='h-[450px] lg:h-[600px] mb-6'>
@@ -25,7 +25,7 @@ const Banner = () => {
         <SwiperSlide className='slide1'>
         <div className='pt-28'>
         <div className=''>
-       <h2 className='text-xl font-extrabold mb-4 '><span className='text-yellow-400'>TOUR</span> & <span className='text-blue-400'>TRAVEL</span></h2>
+       <h2 className='text-xl font-extrabold mb-4 '><span className='text-orange-500'>TOUR</span> & <span className='text-blue-400'>TRAVEL</span></h2>
        <h1 className='text-2xl md:text-5xl lg:text-6xl font-extrabold mb-3'><span className='text-green-500'>LET'S </span><span className='text-yellow-500'>DISCOVER</span> <span className='text-green-500'>COX'S BAZAR</span> </h1>
         <h1 className='md:text-5xl lg:text-6xl  font-extrabold mb-6'>WITH US</h1>
         <div className='ml-[120px] md:ml-[300px] lg:ml-[45%] '>
@@ -38,7 +38,7 @@ const Banner = () => {
         <SwiperSlide className='slide2'>
         <div className='pt-28'>
         <div className=''>
-       <h2 className='text-xl font-extrabold mb-4 '><span className='text-yellow-400'>TOUR</span> & <span className='text-blue-400'>TRAVEL</span></h2>
+       <h2 className='text-xl font-extrabold mb-4 '><span className='text-orange-500'>TOUR</span> & <span className='text-blue-400'>TRAVEL</span></h2>
        <h1 className='text-2xl md:text-5xl lg:text-6xl  font-extrabold mb-3'><span className='text-green-500'>LET'S </span><span className='text-yellow-500'>DISCOVER</span> <span className='text-green-500'>SUNDARBAN</span> </h1>
         <h1 className='md:text-5xl lg:text-6xl  font-extrabold mb-6'>WITH US</h1>
         <div className='ml-[120px] md:ml-[300px] lg:ml-[45%] '>
@@ -51,7 +51,7 @@ const Banner = () => {
         <SwiperSlide className='slide3'>
         <div className='pt-28'>
         <div className=''>
-       <h2 className='text-xl font-extrabold mb-4 '><span className='text-yellow-400'>TOUR</span> & <span className='text-blue-400'>TRAVEL</span></h2>
+       <h2 className='text-xl font-extrabold mb-4 '><span className='text-orange-500'>TOUR</span> & <span className='text-blue-400'>TRAVEL</span></h2>
        <h1 className='text-2xl md:text-5xl lg:text-6xl  font-extrabold mb-3'><span className='text-green-500'>LET'S </span><span className='text-yellow-500'>DISCOVER</span> <span className='text-green-500'>MALDIP</span> </h1>
         <h1 className='md:text-5xl lg:text-6xl  font-extrabold mb-6'>WITH US</h1>
         <div className='ml-[120px] md:ml-[300px] lg:ml-[45%] '>
@@ -64,7 +64,7 @@ const Banner = () => {
         <SwiperSlide className='slide4'>
         <div className='pt-28'>
         <div className=''>
-       <h2 className='text-xl font-extrabold mb-4 '><span className='text-yellow-400'>TOUR</span> & <span className='text-blue-400'>TRAVEL</span></h2>
+       <h2 className='text-xl font-extrabold mb-4 '><span className='text-orange-500'>TOUR</span> & <span className='text-blue-400'>TRAVEL</span></h2>
        <h1 className='text-2xl md:text-5xl lg:text-6xl  font-extrabold mb-3'><span className='text-green-500'>LET'S </span><span className='text-yellow-500'>DISCOVER</span> <span className='text-green-500'>MALASIYA</span> </h1>
         <h1 className='text-2xl md:text-5xl lg:text-6xl  font-extrabold mb-6'>WITH US</h1>
         <div className='ml-[120px] md:ml-[300px] lg:ml-[45%] '>

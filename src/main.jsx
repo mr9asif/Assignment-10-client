@@ -9,6 +9,7 @@ import Root from './Components/Root.jsx';
 import AllTourists from './Components/AllTourists.jsx';
 import AddTourists from './Components/AddTourists.jsx';
 import MyList from './Components/MyList.jsx';
+import About from './Components/About.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path:'/myList',
         element:<MyList></MyList>
+      },
+      {
+        path:'/about',
+        element:<About></About>
       },
     ]
   },
