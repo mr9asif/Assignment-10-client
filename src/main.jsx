@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
@@ -10,6 +10,8 @@ import AllTourists from './Components/AllTourists.jsx';
 import AddTourists from './Components/AddTourists.jsx';
 import MyList from './Components/MyList.jsx';
 import About from './Components/About.jsx';
+import Provider, {  } from './Components/Provider/Provider.jsx';
+import Login from './Components/Login.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,10 @@ const router = createBrowserRouter([
         path:'/about',
         element:<About></About>
       },
+      {
+        path:'/login',
+        element:<Login></Login>
+      },
     ]
   },
 ]);
@@ -43,6 +49,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <RouterProvider router={router} />
+    <Provider>
+    <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>,
 )

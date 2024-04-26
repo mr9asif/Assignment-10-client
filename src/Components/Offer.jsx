@@ -4,9 +4,9 @@ import '../App.css'
 const Offer = () => {
     return (
         <div className="offer max-w-9xl mx-auto h-[700px] px-20 flex justify-around items-center">
-        <div className='flex flex-col gap-3'>
+        <div data-aos='fade-down' className='flex flex-col gap-3'>
            <h3 className='text-[18px] text-green-500 font-bold tracking-[6px]'>MEGA OFFER</h3>
-            <h1 className='text-6xl font-extrabold text-orange-700'><span className='text-green-600'>30% OFF</span> For Honeymoon</h1>
+            <h1 className='text-6xl font-extrabold text-orange-700'><span data-aos='fade-down'  className='text-green-600'>30% OFF</span> For Honeymoon</h1>
             <p className='text-gray-300 font-semibold text-xl'>Enjoy 30% off for honeymoon couples! Treat yourselves to unforgettable experiences.</p>
                
        <div className='flex flex-col gap-2 my-6'>
@@ -29,7 +29,7 @@ const Offer = () => {
            </div>
 
           <div className=''>
-          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-700">
+          <div data-aos='fade-up' className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-700">
           <form className="card-body">
             <div className="form-control">
               <label className="label">

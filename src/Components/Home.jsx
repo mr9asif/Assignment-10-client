@@ -8,6 +8,8 @@ import Service from "./Service";
 
 import UAbout from "./UAbout";
 import Testimonial from "./Testimonial";
+import Guids from "./Guids";
+import Vlog from "./Vlog";
 
 
 const Home = () => {
@@ -20,7 +22,10 @@ const Home = () => {
             <Service></Service>
             <Countrys></Countrys>
             <Offer></Offer>
+            <Guids></Guids>
+            <Vlog></Vlog>
             <Testimonial></Testimonial>
+
 
         </div>
     );

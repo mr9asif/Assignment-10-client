@@ -22,8 +22,8 @@ const Testimonial = () => {
     };
     return (
         <div className="my-6 max-w-7xl mx-auto mt-12">
-            <h1 className="tracking-[12px] font-semibold text-xl text-center text-green-400">TESTOMONIAL</h1>
-            <h1 className="traking-[5px] mb-8 font-semibold text-4xl text-center text-orange-800">What Say Our Clients</h1>
+            <h1 data-aos='zoom-in-up' data-aos-duration="1000" className="tracking-[12px] font-semibold text-xl text-center text-green-400">TESTOMONIAL</h1>
+            <h1 data-aos='zoom-in-down' data-aos-duration="1000" className="tracking-[6px] mb-8 font-semibold text-4xl text-center text-orange-800">What Say Our Clients</h1>
             
             <div className='h-[300px]'>
             <Swiper
@@ -42,8 +42,8 @@ const Testimonial = () => {
             onAutoplayTimeLeft={onAutoplayTimeLeft}
             className="mySwiper"
           >
-            <SwiperSlide className='ss1'>
-              <div className='flex flex-col justify-center h-[250px] items-center gap-1 shadow-lg p-3 bg-gray-400'>
+            <SwiperSlide>
+              <div  data-aos="fade-right"  data-aos-duration="1200" className='flex flex-col justify-center h-[250px] items-center gap-1 shadow-lg p-3 bg-gray-400'>
                 <div className='w-[120px] h-[100px] p-1 '>
                  <img className='border rounded-[50%]' src="https://i.postimg.cc/CKkBtRwm/handsome-bearded-guy-posing-against-white-wall-273609-20597.jpg" alt="" />
                 </div>
@@ -55,8 +55,8 @@ const Testimonial = () => {
               </div>
             
             </SwiperSlide>
-            <SwiperSlide className='ss2'>
-            <div className='flex flex-col justify-center h-[250px] items-center gap-1 shadow-lg p-3 bg-gray-400'>
+            <SwiperSlide>
+            <div  data-aos="fade-right"  data-aos-duration="1200"  className='flex flex-col justify-center h-[250px] items-center gap-1 shadow-lg p-3 bg-gray-400'>
                 <div className='w-[120px] h-[100px] p-1 '>
                  <img className='border rounded-[50%]' src="https://i.postimg.cc/3rC2g1tF/young-bearded-man-with-striped-shirt-273609-5677.jpg" alt="" />
                 </div>
@@ -68,8 +68,8 @@ const Testimonial = () => {
               </div>
           
             </SwiperSlide>
-            <SwiperSlide className='ss3'>
-            <div className='flex flex-col justify-center h-[250px] items-center gap-1 shadow-lg p-3 bg-gray-400'>
+            <SwiperSlide>
+            <div  data-aos="fade-right"  data-aos-duration="1200"  className='flex flex-col justify-center h-[250px] items-center gap-1 shadow-lg p-3 bg-gray-400'>
                 <div className='w-[120px] h-[100px] p-1 '>
                  <img className='border rounded-[50%]' src="https://i.postimg.cc/jSzT5Wx2/cheerful-dark-skinned-woman-smiling-broadly-rejoicing-her-victory-competition-among-young-writers-st.jpg" alt="" />
                 </div>
@@ -80,8 +80,8 @@ const Testimonial = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className='ss4'>
-            <div className='flex flex-col justify-center h-[250px] items-center gap-1 shadow-lg p-3 bg-gray-400'>
+            <SwiperSlide >
+            <div  data-aos="fade-right"  data-aos-duration="1200"  className='flex flex-col justify-center h-[250px] items-center gap-1 shadow-lg p-3 bg-gray-400'>
                 <div className='w-[120px] h-[100px] p-1 '>
                  <img className='border rounded-[50%]' src="https://i.postimg.cc/Gt8FJnt7/portrait-handsome-caucasian-man-formal-260nw-2142820441.jpg" alt="" />
                 </div>
@@ -93,8 +93,8 @@ const Testimonial = () => {
               </div>
             
             </SwiperSlide>
-            <SwiperSlide className='ss5'>
-            <div className='flex flex-col justify-center h-[250px] items-center gap-1 shadow-lg p-3 bg-gray-400'>
+            <SwiperSlide >
+            <div  data-aos="fade-right"  data-aos-duration="1200"  className='flex flex-col justify-center h-[250px] items-center gap-1 shadow-lg p-3 bg-gray-400'>
                 <div className='w-[120px] h-[100px] p-1 '>
                  <img className='border rounded-[50%]' src="https://i.postimg.cc/pyb7bZnZ/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair-285396-896.jpg" alt="" />
                 </div>
