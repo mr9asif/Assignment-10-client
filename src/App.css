@@ -8,7 +8,7 @@ body {
 }
 
 body {
- 
+  background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -38,6 +38,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
 
 .slide1{
   background-image: url('https://i.postimg.cc/tRWrSg6T/west-beach-st-martins-island-600nw-1958317543.jpg');
