@@ -47,7 +47,7 @@ const Navbar = () => {
           
         </div>
         <div className="navbar-center hidden lg:flex ">
-          <ul className="menu menu-horizontal px-1 flex justify-between gap-12">
+          <ul className="menu menu-horizontal px-1 flex justify-between  lg:gap-6">
             <NavLink to='/' className={({isActive})=>isActive? 'text-bold text-green-500  text-[18px]' : 'font-bold text-white hover:text-green-500 text-[18px]' }>Home</NavLink>
             <NavLink to='/allTourists' className={({isActive})=>isActive? 'text-bold text-green-500 text-[18px]' : 'font-bold text-white hover:text-green-500 text-[18px]'}>All Tourists Spot</NavLink>
             <NavLink to='addTourists' className={({isActive})=>isActive?'text-bold text-green-500 text-[18px]' : 'font-bold text-white hover:text-green-500 text-[18px]'}>Add Tourists Spot</NavLink>
