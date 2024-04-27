@@ -12,11 +12,14 @@ import MyList from './Components/MyList.jsx';
 import About from './Components/About.jsx';
 import Provider, {  } from './Components/Provider/Provider.jsx';
 import Login from './Components/Login.jsx';
+import Register from './Components/Register.jsx';
+import Errorpage from './Components/Errorpage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<Errorpage></Errorpage>,
     children:[
       {
         path:'/',
@@ -41,6 +44,10 @@ const router = createBrowserRouter([
       {
         path:'/login',
         element:<Login></Login>
+      },
+      {
+        path:'/register',
+        element:<Register></Register>
       },
     ]
   },

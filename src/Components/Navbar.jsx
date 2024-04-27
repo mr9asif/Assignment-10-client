@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "./Provider/Provider";
 
 
 const Navbar = () => {
+  const {user,signout,}= useContext(AuthContext)
+  console.log('user', user)
         const [theme, setTheme]= useState('light');
 
         useEffect(()=>{
@@ -58,7 +61,16 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-        <Link to='/login'><button className="text-[13px] lg:text-xl w-12 h-[30px] lg:w-24 lg:h-[40px] bg-green-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000"><span className="absolute bg-green-500 size-36 rounded-xl group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span className="absolute bg-sky-800 size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>Login</button></Link>
+        <div className="mr-3 flex gap-3 items-center">
+        <img className="w-[30px] md:w-[38px] lg:w-[42px] h-[30px] lg:h-[42px] border rounded-[50%]" src={user?.photoURL || "https://i.postimg.cc/9FwSdGQf/download.png"} alt="" />
+        <p className="sm:text-[10px] md:text-[13px] lg:text-[15px] text-orange-500 font-bold">{user?.displayName || 'Your Name'}</p>
+        </div>
+     {
+      user? <Link onClick={signout}  to='/login'><button className="text-[13px] lg:text-xl w-12 h-[30px] lg:w-24 lg:h-[40px] bg-green-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000"><span className="absolute bg-green-500 size-36 rounded-xl group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span className="absolute bg-orange-600 size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all" ></span>sign out</button></Link>:
+      <Link to='/login'><button className="text-[13px] lg:text-xl w-12 h-[30px] lg:w-24 lg:h-[40px] bg-green-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000"><span className="absolute bg-green-500 size-36 rounded-xl group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span className="absolute bg-orange-600 size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>Login</button></Link>
+     }
+        
+        
         <label className="cursor-pointer grid place-items-center mx-3">
             <input
              onChange={handleThemeChange}
