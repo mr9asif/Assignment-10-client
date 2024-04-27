@@ -14,6 +14,8 @@ import Provider, {  } from './Components/Provider/Provider.jsx';
 import Login from './Components/Login.jsx';
 import Register from './Components/Register.jsx';
 import Errorpage from './Components/Errorpage.jsx';
+import PrivetRoute from './Components/PrivetRoute/PrivetRoute.jsx';
+import ViewDetails from './Components/ViewDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,11 +33,21 @@ const router = createBrowserRouter([
       },
       {
         path:'/addTourists',
-        element:<AddTourists></AddTourists>
+        element:<PrivetRoute>
+        <AddTourists></AddTourists>
+        </PrivetRoute>
       },
       {
         path:'/myList',
-        element:<MyList></MyList>
+        element:<PrivetRoute>
+        <MyList></MyList>
+        </PrivetRoute>
+      },
+      {
+        path:`/viewDetails/:id`,
+        element:<PrivetRoute>
+        <ViewDetails></ViewDetails>
+        </PrivetRoute>
       },
       {
         path:'/about',

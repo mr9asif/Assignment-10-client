@@ -5,7 +5,7 @@ import { AuthContext } from "./Provider/Provider";
 
 const Navbar = () => {
   const {user,signout,}= useContext(AuthContext)
-  console.log('user', user)
+ 
         const [theme, setTheme]= useState('light');
 
         useEffect(()=>{
@@ -53,8 +53,12 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 flex justify-between  lg:gap-6">
             <NavLink to='/' className={({isActive})=>isActive? 'text-bold text-green-500  text-[18px]' : 'font-bold text-white hover:text-green-500 text-[18px]' }>Home</NavLink>
             <NavLink to='/allTourists' className={({isActive})=>isActive? 'text-bold text-green-500 text-[18px]' : 'font-bold text-white hover:text-green-500 text-[18px]'}>All Tourists Spot</NavLink>
-            <NavLink to='/addTourists' className={({isActive})=>isActive?'text-bold text-green-500 text-[18px]' : 'font-bold text-white hover:text-green-500 text-[18px]'}>Add Tourists Spot</NavLink>
-            <NavLink to='/myList' className={({isActive})=>isActive?'text-bold text-green-500 text-[18px]' : 'font-bold text-white hover:text-green-500 text-[18px]'}>My List</NavLink>
+           {
+            user &&  <NavLink to='/addTourists' className={({isActive})=>isActive?'text-bold text-green-500 text-[18px]' : 'font-bold text-white hover:text-green-500 text-[18px]'}>Add Tourists Spot</NavLink>
+           }
+           {
+            user &&  <NavLink to='/myList' className={({isActive})=>isActive?'text-bold text-green-500 text-[18px]' : 'font-bold text-white hover:text-green-500 text-[18px]'}>My List</NavLink>
+           }
             <NavLink to='/about' className={({isActive})=>isActive?'text-bold text-green-500 text-[18px]' : 'font-bold text-white hover:text-green-500 text-[18px]'}>About Us</NavLink>
         
             

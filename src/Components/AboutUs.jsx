@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const AboutUs = () => {
     return (
         
-        <div className="max-w-[95%] md:max-w-[95%]  lg:max-w-7xl mx-auto  my-12 mb-9">
+        <div className="max-w-[95%] md:max-w-[95%]   lg:max-w-7xl mx-auto  my-12 mb-9">
          
            <div className="flex items-center ">
            <div>
