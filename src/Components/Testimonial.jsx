@@ -21,7 +21,7 @@ const Testimonial = () => {
       progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
     return (
-        <div className="my-6 max-w-7xl mx-auto mt-12">
+        <div className="my-6 w-[96%] lg:max-w-7xl mx-auto mt-12">
             <h1 data-aos='zoom-in-up' data-aos-duration="1000" className="tracking-[12px] font-semibold text-xl text-center text-green-400">TESTOMONIAL</h1>
             <h1 data-aos='zoom-in-down' data-aos-duration="1000" className="tracking-[6px] mb-8 font-semibold text-4xl text-center text-orange-800">What Say Our Clients</h1>
             

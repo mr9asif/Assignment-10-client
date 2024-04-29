@@ -8,7 +8,8 @@ body {
 }
 
 body {
-  background: #eee;
+  /* background: #eee; */
+  
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -24,7 +25,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  /* background: #fff; */
 
   /* Center slide text vertically */
   display: flex;
@@ -65,7 +66,36 @@ body {
 
 }
 
+/* coutryss */
+.bangladesh{
+  background-image: url('https://i.postimg.cc/QMY4KWC2/feat-30d48d6e-7b84-4dfe-bf22-6306f8a2d403.jpg');
+  background-size: cover;
+}
+.thailand{
+  background-image: url('https://i.postimg.cc/sxzpXsHV/Phi-Phi-2.jpg');
+  background-size: cover;
+}
+.indonesia{
+  background-image: url('https://i.postimg.cc/15jf7y0f/indonesia-cover-2.jpg');
+  background-size: cover;
+}
+.malaysia{
+  background-image: url('https://i.postimg.cc/9MQ2j7CV/original-bd06da40359dfaf784fc5f1367d0e597.jpg');
+  background-size: cover;
+}
+.vietnam{
+  background-image: url('https://i.postimg.cc/kMZmkGZ3/shutterstock-RF-1019924119.jpg');
+  background-size: cover;
+}
+.combodia{
+  background-image: url('https://i.postimg.cc/DzBV5wsN/Untitled-design-3.jpg');
+  background-size: cover;
+}
 
+/* drop */
+.profile:hover .drop {
+  display: block;
+}
 
 /* .ss1{
   background-image:url('https://i.postimg.cc/BQvK8YJ0/Sundarban-Tiger-Roar-1.jpg') ;

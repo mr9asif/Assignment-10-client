@@ -61,7 +61,7 @@ const Footer = () => {
           <a className="link link-hover">Cookie policy</a>
 
           <h2 className="text-2xl font-bold  tracking-[8px] text-gray-300">NEWS LETTER</h2>
-           <label className="flex items-center gap-2" htmlFor="">
+           <label className="lg:flex items-center gap-2" htmlFor="">
             <input type="text" placeholder="Email" className="p-3 bg-gray-100 rounded" />
             <button className="text-gray-200 text-xl font-bold border bg-green-700 hover:bg-green-900 p-2">Subscribe</button>
            </label>

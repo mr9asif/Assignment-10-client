@@ -7,7 +7,7 @@ const UAbout = () => {
 
 
     return (
-        <div className="w-[95%] lg:max-w-7xl mx-auto  md:gap-2 lg:gap-3 md:px-2 md:flex lg:flex items-center  ">
+        <div className="sm:w-[95%] lg:max-w-7xl mx-auto  md:gap-2 lg:gap-3 md:px-2 md:flex lg:flex items-center  ">
             <div data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-anchor-placement="center-bottom" className="w-[95%] mb-3 mx-auto lg:w-[390px] h-[180px] rounded-xl md:p-3 lg:p-5 flex items-center md:gap-2 lg:gap-4 bg-orange-900">
@@ -38,7 +38,7 @@ const UAbout = () => {
               </div>
 
             </div>
-            <div data-aos="fade-left"
+            <div data-aos="flip-up"
             
             data-aos-duration="1000" className="w-[95%] mb-3 mx-auto lg:w-[390px] h-[180px] rounded-xl p-3 lg:p-5 flex items-center gap-4 bg-green-900">
             <div className=" p-4 shadow-lg ">

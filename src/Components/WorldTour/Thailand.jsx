@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 
 
-const Tour = ({tour}) => {
-    
+const Thailand = ({thailand}) => {
     const {imageUrl,touristSpotName,countryName,averageCost,seasonality,travelTime ,
-        totalVisitorsPerYear,location,description} = tour;
+        totalVisitorsPerYear,location,description} = thailand;
 
     return (
-        <div>
-        <div  data-aos="flip-left"  data-aos-duration="1200" className="h-[550px] md::h-[600px] bg-gray-300 shadow-md rounded p-2 relative">
+        <div className='w-[95%] mx-auto '>
+        <div  data-aos="fade-left"  data-aos-duration="1200" className="h-[550px] md::h-[600px] bg-gray-300 shadow-md rounded p-2 relative">
         <div className="flex flex-col justify-center  items-center gap-2">
              <img className="w-full h-[250px]  rounded" src={imageUrl} alt="" />
              <div className="p-4">
@@ -28,7 +27,8 @@ const Tour = ({tour}) => {
                    <h2 className="text-[16px] font-bold text-gray-600"><span className="text-gray-800">Travel Time:</span>{travelTime}</h2>
                  </div>
                 <div className="flex justify-start items-center my-2  absolute bottom-0">
-                <Link to={`/viewDetails/${tour._id}`}><button className="text-[13px]  lg:text-xl w-28 h-[30px] lg:w-32 rounded-xl lg:h-[40px] bg-green-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000"><span className="absolute bg-green-500 size-36 rounded-xl group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span className="absolute bg-orange-600 size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>View Details</button></Link>
+                <Link
+                 to={`/viewDetails/${thailand._id}`}><button className="text-[13px]  lg:text-xl w-28 h-[30px] lg:w-32 rounded-xl lg:h-[40px] bg-green-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000"><span className="absolute bg-green-500 size-36 rounded-xl group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span className="absolute bg-orange-600 size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>View Details</button></Link>
                 </div>
 
              </div>
@@ -38,4 +38,4 @@ const Tour = ({tour}) => {
     );
 };
 
-export default Tour;
+export default Thailand;

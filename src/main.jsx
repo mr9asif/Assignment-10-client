@@ -16,6 +16,18 @@ import Register from './Components/Register.jsx';
 import Errorpage from './Components/Errorpage.jsx';
 import PrivetRoute from './Components/PrivetRoute/PrivetRoute.jsx';
 import ViewDetails from './Components/ViewDetails.jsx';
+import Update from './Components/Update.jsx';
+import SouthAsia from './Components/WorldTour/SouthAsia.jsx';
+import America from './Components/WorldTour/America.jsx';
+import Africa from './Components/WorldTour/Africa.jsx';
+import MiddleEast from './Components/WorldTour/MiddleEast.jsx';
+import CenteralAsia from './Components/WorldTour/CenteralAsia.jsx';
+import Europe from './Components/WorldTour/Europe.jsx';
+
+import Countries from './Components/WorldTour/Countries.jsx';
+import AddCountry from './Components/WorldTour/AddCountry.jsx/AddCountry.jsx';
+import Bangladesh from './Components/WorldTour/Bangladesh.jsx';
+import ViewDetailsCountry from './Components/WorldTour/ViewDetailsCountry.jsx';
 
 const router = createBrowserRouter([
   {
@@ -50,6 +62,18 @@ const router = createBrowserRouter([
         </PrivetRoute>
       },
       {
+        path:`/Details/:id`,
+        element:
+        <ViewDetailsCountry></ViewDetailsCountry>
+      
+      },
+      {
+        path:`/update/:id`,
+        element:<PrivetRoute>
+        <Update></Update>
+        </PrivetRoute>
+      },
+      {
         path:'/about',
         element:<About></About>
       },
@@ -61,6 +85,42 @@ const router = createBrowserRouter([
         path:'/register',
         element:<Register></Register>
       },
+      {
+        path:'/countries',
+        element:<Countries></Countries>
+      },
+      {
+        path:'/countries/Bangladesh',
+        element:<America></America>
+      },
+      {
+        path:'/countries/Thailand',
+        element:<SouthAsia></SouthAsia>
+      },
+      {
+        path:'/countries/Indonesia',
+        element:<Europe></Europe>
+      },
+      {
+        path:'/countries/Malaysia',
+        element:<Africa></Africa>
+      },
+      {
+        path:'/countries/Vietnam',
+        element:<MiddleEast></MiddleEast>
+      },
+      {
+        path:'/countries/Combodia',
+        element:<CenteralAsia></CenteralAsia>
+      },
+      {
+        path:'/addcountry',
+        element:<AddCountry></AddCountry>
+      },
+      {
+        path:'/countries',
+        element:<Countries></Countries>
+      }
     ]
   },
 ]);

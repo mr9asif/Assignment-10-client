@@ -44,10 +44,10 @@ const Register = () => {
 
     return (
         <div>
-            <div className="hero  max-w-8xl mx-auto bg-yellow-300 ">
+            <div className="hero  max-w-8xl mx-auto  ">
                 <div className="hero-content flex-col w-full   ">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-3xl font-bold text-gray-400">Register Here Now!</h1>
+                        <h1 className="text-3xl font-bold text-gray-400">Register Here </h1>
                         
                     </div>
                     <div className="card shrink-0 w-full border max-w-sm shadow-2xl bg-base-100">

@@ -11,7 +11,7 @@ const ViewDetails = () => {
      
     
     useEffect(() => {
-        fetch(`http://localhost:2000/viewDetails/${id}`)
+        fetch(`https://as-10-server.vercel.app/viewDetails/${id}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -21,7 +21,7 @@ const ViewDetails = () => {
     
     console.log('iid', id)
     return (
-              <div className="max-w-5xl  my-4 mx-auto">
+              <div className="max-w-5xl  my-4 mx-auto bg-gray-300">
               <div  data-aos="fade-left"  data-aos-duration="1200" className="w-full  shadow-md rounded p-2">
               <div className="flex flex-col justify-center items-center gap-2">
                    <img className="w-full h-[400px] p-4  rounded-xl" src={imageUrl} alt="" />

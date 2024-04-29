@@ -67,7 +67,7 @@ const handleSocialLogin = socialLogin =>{
         <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col">
           <div className="text-center lg:text-left">
-            <h1 className="text-2xl lg:text-5xl font-bold">Login Here  Now!</h1>
+            <h1 className="text-2xl lg:text-5xl font-bold text-gray-500">Login Here </h1>
            
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

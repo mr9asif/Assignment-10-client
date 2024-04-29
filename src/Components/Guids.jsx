@@ -13,11 +13,11 @@ import { Pagination } from 'swiper/modules';
 
 const Guids = () => {
     return (
-        <div>
+        <div className='w-[95%] lg:max-w-7xl mx-auto'>
             <h1 data-aos='zoom-in-down' data-aos-duration="1000" className="tracking-[10px] text-green-600 font-semibold text-center text-xl my-6">GUIDES</h1>
             <h1 data-aos='zoom-in-down' data-aos-duration="1000" className="tracking-[5px] text-orange-500 font-semibold text-center text-3xl my-6">Our Travel Guides</h1>
 
-            <div className='max-w-7xl mx-auto'>
+            <div className='w-[95%] lg:max-w-7xl mx-auto'>
             <Swiper
             slidesPerView={4}
             spaceBetween={30}

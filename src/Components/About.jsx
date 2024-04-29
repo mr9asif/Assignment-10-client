@@ -2,8 +2,8 @@
 
 const About = () => {
     return (
-       <div className="bg-green-900 max-w-8xl mx-auto  h-[600px]">
-       <div className="mt-8 border">
+       <div className=" max-w-8xl mx-auto  h-[600px]">
+       <div className="mt-8 ">
        <div className="max-w-7xl mx-auto bg-slate-300 rounded-xl  shadow-md px-10 py-16 my-8">
        <div>
        <h2 className="text-4xl mb-5 text-yellow-700 font-bold">About Us</h2>

@@ -5,10 +5,10 @@ import List from "./List";
 
 const MyList = () => {
     const {user} = useContext(AuthContext);
-    const [list, setList]= useState([])
+    const [lists, setList]= useState([])
 
     useEffect(()=>{
-        fetch(`http://localhost:2000/myList/${user?.email}`)
+        fetch(`https://as-10-server.vercel.app/myList/${user?.email}`)
         .then(res=>res.json())
         .then(data=>{
             console.log(data)
@@ -17,11 +17,11 @@ const MyList = () => {
     },[])
     return (
             
-        <div>
-            <h3>my lists</h3>
-           <div className="grid grid-cols-3 gap-3 max-w-7xl mx-auto">
+        <div className="w-[95%] mx-auto">
+            <h3 className='text-center text-3xl lg:text-4xl font-bold text-orange-700 my-5'>Your Added Lists Here</h3>
+           <div className="w-[95%] grid md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-7xl mx-auto my-4">
            {
-            list.map(list=><List key={list._id} list={list}></List>)
+            lists.map(list=><List key={list._id} list={list} lists={lists} setList={setList}></List>)
            }
            </div>
         </div>

@@ -15,16 +15,30 @@ import Vlog from "./Vlog";
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
-            <AboutUs></AboutUs>
-            <UAbout></UAbout>
+             <Banner></Banner>
+              {/* about*/}
+               <AboutUs></AboutUs>
+               {/* usabout*/}
+           <UAbout></UAbout>
+            {/* destinaton*/}
             <Distination></Distination>
-            <Service></Service>
-            <Countrys></Countrys>
-            <Offer></Offer>
-            <Guids></Guids>
-            <Vlog></Vlog>
-            <Testimonial></Testimonial>
+            {/* service*/}
+           <Service></Service>
+             {/* country*/}
+           
+             <Countrys></Countrys>
+              {/* offer*/}
+             <Offer></Offer>
+          
+              {/* guide*/}
+              <Guids></Guids>
+     
+              {/* vlog*/}
+              <Vlog></Vlog>
+          
+              <Testimonial></Testimonial>
+           
+          
 
 
         </div>

@@ -3,7 +3,7 @@ import '../App.css'
 
 const Offer = () => {
     return (
-        <div className="offer w-[99%] md:w-[99%]  lg:max-w-full mx-auto h-[1000px] lg:h-[700px] px-20 lg:flex justify-around items-center">
+        <div className="offer w-[95%]   lg:max-w-7xl mx-auto h-[1000px] lg:h-[700px] lg:px-20 lg:flex justify-around items-center">
         <div data-aos='fade-down' className='flex flex-col gap-3'>
            <h3 className='text-[12px] lg:text-[18px] text-green-500 font-bold tracking-[6px]'>MEGA OFFER</h3>
             <h1 className='text-3xl md:text-4xl lg:text-6xl font-extrabold text-orange-700'><span data-aos='fade-down'  className='text-green-600'>30% OFF</span> For Honeymoon</h1>
