@@ -19,7 +19,7 @@ const MyList = () => {
             
         <div className="w-[95%] mx-auto">
             <h3 className='text-center text-3xl lg:text-4xl font-bold text-orange-700 my-5'>Your Added Lists Here</h3>
-           <div className="w-[95%] grid md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-7xl mx-auto my-4">
+           <div className="w-[95%] flex flex-col gap-3 max-w-6xl mx-auto my-4">
            {
             lists.map(list=><List key={list._id} list={list} lists={lists} setList={setList}></List>)
            }

@@ -24,10 +24,10 @@ const Countrys = () => {
         <div className=" my-7 w-[95%] lg:max-w-7xl mx-auto ">
             <h1 className="text-center text-4xl text-green-600 my-4">Explore many country with us</h1>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 sm:w-[92%] border lg:max-w-7xl gap-4 mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 sm:w-[92%]  lg:max-w-7xl gap-4 mx-auto">
               <Link to ={ `/countries/Bangladesh`} >
               <div data-aos="flip-left"  data-aos-duration="1200"  className="bangladesh lg:p-5 border rounded h-[330px] sm:w-[95%] mx-auto  flex flex-col justify-center items-center gap-3">
-              <div className="w-[85%] h-[40%]  p-8" >
+              <div className="w-[85%] h-[40%] border  p-8" >
               <h1 className="text-3xl font-extrabold text-gray-200">Bangladesh</h1>
               <p className="text-gray-300 text-center font-bold text-xl">5 Countries</p>
              

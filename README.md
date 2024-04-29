@@ -18,14 +18,5 @@ Welcome to TRAVELER, your ultimate destination for exploring the world and embar
 
 To get started with TRAVELER, simply visit our website at [www.traveler.com](https://www.traveler.com) and create an account. Once logged in, you can start exploring destinations, booking flights and accommodations, and planning your itinerary.
 
-## Feedback
-
-We value your feedback! If you have any suggestions, comments, or questions about TRAVELER, please don't hesitate to [contact us](mailto:feedback@traveler.com). Your input helps us improve our services and enhance the travel experience for all our users.
-
-## Contributing
-
-If you're interested in contributing to TRAVELER, whether it's through code, design, or content creation, we'd love to hear from you! Check out our [Contribution Guidelines](CONTRIBUTING.md) to learn more about how you can get involved.
-
-
 
 Happy travels!
