@@ -62,10 +62,10 @@ const Offer = () => {
 
       </div>
 
-      <div className='border'>
+      <div className=' '>
         <div className="hero  ">
           <div className="hero-content flex-col">
-            <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-200">
+            <div className="card shrink-0 w-full max-w-sm shadow-2xl opacity-80 bg-base-200">
               <form onSubmit={onSubmit} className="card-body">
                 <div className="form-control">
                   <label className="label">
