@@ -17,8 +17,8 @@ const Africa = () => {
     
     },[])
     return (
-        <div className="max-w-7xl mx-auto my-6">
-        <h1  className="text-4xl font-bold text-center text-orange-400 my-3">Visit Bangladesh Best Tourist Spots</h1>
+        <div className="w-[95%] lg:max-w-7xl mx-auto my-6">
+        <h1  className="text-2xl lg:text-4xl font-bold text-center text-orange-400 my-3">Visit Bangladesh Best Tourist Spots</h1>
 
         <div className="lg:grid grid-cols-3 gap-3 ">
         {

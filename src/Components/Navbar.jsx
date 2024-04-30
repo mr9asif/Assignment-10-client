@@ -68,23 +68,45 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
       
-     {
-      user? <div className=" items-center profile relative gap-2">< img src={user.photoURL} alt="" className="w-[50px] rounded-[50%]"  />
-         <div className="bg-gray-200 absolute  p-4 flex flex-col justify-center gap-2  z-30 hidden drop">
-         <h1 className="text-[14px] ">{user.displayName}</h1>
-         <Link  onClick={signout}  to='/login'><button className="text-[13px]  w-12 h-[30px] lg:w-24 lg:h-[40px] bg-green-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000"><span className="absolute bg-green-500 size-36 rounded-xl group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span className="absolute bg-orange-600 size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all" ></span>sign out</button></Link>
-         </div>
-      </div>
-         
+        <div className="items-center profile relative gap-2">
+        {user ? (
+            <div>
+                {user.photoURL ? (
+                    <img src={user.photoURL} alt="" className="w-[50px] rounded-[50%]" />
+                ) : (
+                  <img src="https://i.postimg.cc/gjR4qBVg/blank-profile-picture-973460-1280.png" alt="" className="w-[45px] p-1 border rounded-[50%]" />
+                )}
+                <div className="bg-gray-200 absolute p-4 flex flex-col justify-center gap-2 z-30 hidden drop">
+                    <h1 className="text-[14px]">{user.displayName}</h1>
+                    <Link onClick={signout} to='/login'>
+                        <button className="text-[13px] image w-12 h-[30px] lg:w-24 lg:h-[40px] bg-green-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000">
+                            <span className="absolute bg-green-500 size-36 rounded-xl group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span>
+                            <span className="absolute bg-orange-600 size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>
+                            Sign out
+                        </button>
+                    </Link>
+                </div>
+            </div>
+        ) : (
+            <div className="flex items-center gap-3">
+                <Link to='/register'>
+                    <button className="text-[13px] lg:text-xl w-12 h-[30px] lg:w-24 lg:h-[40px] bg-green-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000">
+                        <span className="absolute bg-green-500 size-36 rounded-xl group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span>
+                        <span className="absolute bg-orange-600 size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>
+                        Sign up
+                    </button>
+                </Link>
+                <Link to='/login'>
+                    <button className="text-[13px] lg:text-xl w-12 h-[30px] lg:w-24 lg:h-[40px] bg-green-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000">
+                        <span className="absolute bg-green-500 size-36 rounded-xl group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span>
+                        <span className="absolute bg-orange-600 size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>
+                        Login
+                    </button>
+                </Link>
+            </div>
+        )}
+    </div>
     
-         :
-         <div className="flex items-center gap-3"> 
-         <Link to='/register'><button className="text-[13px] lg:text-xl w-12 h-[30px] lg:w-24 lg:h-[40px] bg-green-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000"><span className="absolute bg-green-500 size-36 rounded-xl group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span className="absolute bg-orange-600 size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>Sign up</button></Link>
-         <Link to='/login'><button className="text-[13px] lg:text-xl w-12 h-[30px] lg:w-24 lg:h-[40px] bg-green-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000"><span className="absolute bg-green-500 size-36 rounded-xl group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span className="absolute bg-orange-600 size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>Login</button></Link>
-         </div>
-          
-     }
-        
 
     
 

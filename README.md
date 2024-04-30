@@ -16,7 +16,7 @@ Welcome to TRAVELER, your ultimate destination for exploring the world and embar
 
 ## Getting Started
 
-To get started with TRAVELER, simply visit our website at [www.traveler.com](https://www.traveler.com) and create an account. Once logged in, you can start exploring destinations, booking flights and accommodations, and planning your itinerary.
+To get started with TRAVELER, simply visit our website at [www.traveler.com](https://steady-baklava-3119cd.netlify.app/) and create an account. Once logged in, you can start exploring destinations, booking flights and accommodations, and planning your itinerary.
 
 
 Happy travels!

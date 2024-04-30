@@ -77,7 +77,8 @@ const Provider = ({children}) => {
          GithibSignIn,
          updateUser,
          signout,
-         loading
+         loading,
+         setLoading
          
     }
 

@@ -12,7 +12,7 @@ const Tourist = ({tourist}) => {
     const {imageUrl,touristSpotName,countryName,averageCost,seasonality,travelTime ,
         totalVisitorsPerYear,location,description} = tourist;
     return (
-        <div  data-aos="flip-left"  data-aos-duration="1200" className="w-[400px] h-[520px] bg-gray-300 shadow-md rounded p-2">
+        <div  data-aos="flip-up"  data-aos-duration="1200" className="w-[400px] h-[520px] bg-gray-300 shadow-md rounded p-2">
             <div className="flex flex-col justify-center items-center gap-2">
                  <img className="w-full h-[250px]  rounded" src={imageUrl} alt="" />
                  <div className="p-4">

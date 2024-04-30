@@ -4,6 +4,7 @@ import Combodia from "./Combodia";
 
 const CenteralAsia = () => {
     const [combodia, setCombodia]= useState([]);
+    const [spiner, setSpiner]= useState(true)
     // console.log(bd)
 
     useEffect(()=>{
@@ -13,12 +14,17 @@ const CenteralAsia = () => {
              console.log(data)
          
             setCombodia(data)
+            setSpiner(false)
         })
     
     },[])
     return (
-        <div className="max-w-7xl mx-auto my-6">
-        <h1  className="text-4xl font-bold text-center text-orange-400 my-3">Visit Bangladesh Best Tourist Spots</h1>
+        <div className="w-[95%] lg:max-w-7xl mx-auto my-6">
+        <h2 className="text-center text-orange-500 font-bold text-4xl  my-6">Our All Tourist Spots </h2>
+        <div className="">
+       
+        <h1 className="text-7xl text-center  ">{spiner && <span className="loading loading-bars loading-lg text-blue-400  my-36"></span> }</h1>
+        </div>
 
         <div className="lg:grid grid-cols-3 gap-3 ">
         {
