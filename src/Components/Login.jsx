@@ -70,7 +70,7 @@ const handleSocialLogin = socialLogin =>{
             <h1 className="text-2xl lg:text-5xl font-bold text-gray-500">Login Here </h1>
            
           </div>
-          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 ">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
                 <label className="label">
